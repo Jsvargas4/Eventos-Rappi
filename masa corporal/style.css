@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #91DDCF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ce29c0;
+}
+
+.contenedor {
+    width: 60%;
+    background-color: #F19ED2;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form{
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;  
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.resultado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#imc, #clasificacion {
+    font-weight: bold;
+}

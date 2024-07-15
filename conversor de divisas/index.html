@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Divisas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Convertidor de Divisas</h1>
+
+    <div class="contenedor">
+        <div class="caja">
+            <label for="monedaOrigen">Moneda de origen:</label>
+            <select id="monedaOrigen" name="monedaOrigen">
+                <option value="USD">Dólar estadounidense (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="COP">Peso colombiano (COP)</option>
+                </select>
+
+            <label for="montoOrigen">Monto a convertir:</label>
+            <input type="number" id="montoOrigen" name="montoOrigen" min="1" required>
+        </div>
+
+        <div class="caja">
+            <label for="monedaDestino">Moneda de destino:</label>
+            <select id="monedaDestino" name="monedaDestino">
+                <option value="USD">Dólar estadounidense (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="COP">Peso colombiano (COP)</option>
+                </select>
+
+            <label for="montoDestino">Monto convertido:</label>
+            <input type="number" id="montoDestino" name="montoDestino" min="0" readonly>
+        </div>
+
+        <button type="button" onclick="convertirDivisas()">Convertir</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

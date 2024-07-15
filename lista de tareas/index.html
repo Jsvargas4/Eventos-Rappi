@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Mis notas</h1>
+    
+    <div id="filtros">
+        <input type="text" id="filtro-texto" placeholder="Buscar por texto">
+        <label id="labeli" for="filtro-realizadas">Solo realizadas</label>
+        <input type="checkbox" id="filtro-realizadas">
+    </div>
+
+    <div id="contenedor-notas">
+        //contenedor notas
+    </div> 
+    
+    <div id="formulario-nueva-nota">
+        <h2>Nueva nota</h2>
+        <input type="text" id="titulo-nueva-nota" placeholder="Título">
+        <textarea id="texto-nueva-nota" placeholder="Escribe aquí tu nota"></textarea>
+        <button onclick="agregarNota()">Guardar</button>
+        <button onclick="limpiarFormulario()">Limpiar</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
